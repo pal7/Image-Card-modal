@@ -1,0 +1,136 @@
+/* ask M suffix translate */
+/* also why on hover image border glitch not on other elements ??? :/ 
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url(./background.png) repeat;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.image__card {
+  width: 300px;
+  height: 500px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: all 0.1s;
+  border: 3px solid #ffe;
+}
+
+.image__card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border: 3px solid #ff076e;
+  overflow: hidden;
+}
+
+.image__card--image {
+  width: 300px;
+  height: 200px;
+  background: url(./2.jpg) no-repeat left center / cover;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.image__card--content {
+  padding-top: 20px;
+  width: 100%;
+  height: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image__card--content p:nth-child(1) {
+  color: #ff076e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.image__card--content h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.image__card--content p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.image__card--content .desc {
+  padding: 21px 25px 5px 25px;
+  flex-grow: 1;
+  font-size: 14px;
+  text-align: center;
+}
+
+p .suffix {
+  line-height: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff076e;
+}
+
+.image__card--stats {
+  background-color: #ff076e;
+  height: 94px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #ffe;
+  border: 1px solid #ff076e;
+}
+
+.image__card--stats span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image__card--stats span:nth-of-type(2) {
+  border-left: 1px solid rgba(0, 0, 0, 0.274);
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+h3 .suffix {
+  width: auto;
+  height: auto;
+  font-size: 10px;
+  display: inline-block;
+  transform: translate(1px, -4px);
+}
+
+.image__card--stats p {
+  font-size: 12px;
+  font-weight: 300;
+}
